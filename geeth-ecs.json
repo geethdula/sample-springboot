@@ -1,0 +1,62 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:300217821445:task-definition/geeth-ecs:1",
+    "containerDefinitions": [
+        {
+            "name": "geeth-springboot",
+            "image": "300217821445.dkr.ecr.ap-southeast-1.amazonaws.com/geeth-test:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "geeth-springboot-8080-tcp",
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": []
+        }
+    ],
+    "family": "geeth-ecs",
+    "executionRoleArn": "arn:aws:iam::300217821445:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-12-10T04:16:04.885Z",
+    "registeredBy": "arn:aws:sts::300217821445:assumed-role/AWSReservedSSO_AdministratorAccess_c8600c50fb796c5a/geeth",
+    "tags": []
+}
