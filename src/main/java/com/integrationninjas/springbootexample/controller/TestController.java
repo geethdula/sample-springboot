@@ -16,5 +16,12 @@ public class TestController {
 		object.put("emailaddress", "geethdula1@gmail.com");
 		return object;
 	}
+	@GetMapping
+	public Object hello() {
+		Map<String, String> object = new HashMap<>();
+		object.put("This is CICD", "Jenkins CICD to deply to ECS");
+		object.put("emailaddress", "geethdula1@gmail.com");
+		return object;
+	}
 
 }
