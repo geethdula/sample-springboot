@@ -19,7 +19,7 @@ public class TestController {
 	@GetMapping("/user")
 	public Object hello2() {
 		Map<String, String> object = new HashMap<>();
-		object.put("This is CICD", "Jenkins CICD to deply to ECS");
+		object.put("This is CICD", "Jenkins CICD to deply to ECS - Demo Jenkins project :)");
 		object.put("emailaddress", "geethdula1@gmail.com");
 		return object;
 	}
