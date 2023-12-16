@@ -12,7 +12,7 @@ public class TestController {
 	@GetMapping
 	public Object hello() {
 		Map<String, String> object = new HashMap<>();
-		object.put("myname", "Geeth Dulanjana CICD done");
+		object.put("MyCICD Demo", "Geeth Dulanjana - Sample Spring boot app");
 		object.put("emailaddress", "geethdula1@gmail.com");
 		return object;
 	}
